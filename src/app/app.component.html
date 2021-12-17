@@ -1,0 +1,12 @@
+<h1>Stopwatch</h1>
+
+<div class="stopwatch">
+  <app-time [hours]="hours" [minutes]="minutes" [seconds]="seconds"></app-time>
+
+  <div class="buttons">
+    <app-button (onClick)="start()" name="start"></app-button>
+    <app-button (onClick)="stop()" name="stop"></app-button>
+    <app-button (onClick)="wait()" name="wait"></app-button>
+    <app-button (onClick)="reset()" name="reset"></app-button>
+  </div>
+</div>
